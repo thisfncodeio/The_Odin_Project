@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Library</title>
+</head>
+
+<body>
+    <header>
+        <h1>BookList</h1>
+        <p>Some random subtitle</p>
+        <!-- <div id="booklist-form_button-container"> -->
+        <button id="booklist-form_button">Add Book</button>
+        <!-- </div> -->
+    </header>
+    <main>
+        <div class="container">
+            <div id="booklist-form_container">
+                <div id="booklist-form_form-container">
+                    <form>
+                        <label for="book-title">Title</label>
+                        <br>
+                        <input type="text" id="book-title" required>
+                        <br>
+                        <label for="book-author">Author</label>
+                        <br>
+                        <input type="text" id="book-author" required>
+                        <br>
+                        <label for="book-pages">Number of Pages</label>
+                        <br>
+                        <input type="number" id="book-pages" required>
+                        <br>
+                        <input type="checkbox" id="book-isRead" checked>
+                        <label for="book-isRead">&nbsp;Already Read?</label>
+                        <br>
+                        <input type="button" id="book-submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+            <div id="booklist_table">
+                <!-- Dynamically Inserted -->
+                <!-- <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Number of Pages</th>
+                        <th>Read?</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Title Title</td>
+                        <td>Author Author</td>
+                        <td>1000</td>
+                        <td>Already Read</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <td>Title Title</td>
+                        <td>Author Author</td>
+                        <td>1000</td>
+                        <td>Already Read</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <td>Title Title</td>
+                        <td>Author Author</td>
+                        <td>1000</td>
+                        <td>Already Read</td>
+                        <td>X</td>
+                    </tr>
+                </tbody>
+            </table> -->
+            </div>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
