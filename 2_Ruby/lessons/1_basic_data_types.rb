@@ -207,6 +207,7 @@ nil.to_s() #=> ""
 x = true
 y = false
 
+
 ## Nil
 
 # In Ruby, 'nil' represents "nothing". It is not "undefined", but rather the unexistance of something, like 'null' in other languages
