@@ -44,6 +44,7 @@ MY_CONSTANT = "I can be accessed form anywhere! MUAHAHAAA!"
 # Global Variables
 # 1. Declared by starting the variable name with '$'
 # 2. Are available throughout the entire application
+# 3. IT IS RECOMMENDED NEVER TO USE GLOBAL VARIABLES
 
 $my_global = "I can also be accessed from anywhere!"
 
@@ -51,6 +52,7 @@ $my_global = "I can also be accessed from anywhere!"
 # 1. Declared by starting the variable name with '@@'
 # 2. Can be accessed by instances of the class and by the class itself
 # 3. Can only be initialized at the class level, outside of any method definitions
+# 4. CLASS VARIABLES ARE RARELY EVER NEEDED
 
 @@num_of_instances = 0
 
