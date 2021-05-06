@@ -182,13 +182,44 @@ nil.to_s() #=> ""
 
 # == SYMBOLS ==
 
+:hello_world
+:"hello world" #=> This is also a symbol
+:'hello world' #=> This too
+:hello world #=> This is a syntax error as symbols cannot contain space characters
 
 
+## Symbols vs Strings
+
+# Symbols are comparable to strings except for a few nuances:
+# 1. Every time a string is used in Ruby, Ruby has to store a new version of the string in memory even if an existing string with the same value already exists whereas symbols are stored in memory only once and the same symbol is used in all instances.
+
+"hello" == "hello" #=> true
+"hello".object_id == "hello".object_id #=> false (Even though the 2 strings contain the same value, they are actually 2 different string objects in memory)
+:hello == :hello #=> true
+:hello.object_id == :hello.object_id #=> true (Same value, same object in memory)
 
 
+################################################################################################
 
 
+# == BOOLEANS ==
 
+x = true
+y = false
 
+## Nil
 
-puts "Pending..."
+# In Ruby, 'nil' represents "nothing". It is not "undefined", but rather the unexistance of something, like 'null' in other languages
+# In Ruby, everything has a return value, if a piece of code doesn't explicitly return something, it will return 'nil'
+
+z = nil
+"hello world".nil? #=> false
+"hello world".nil?() #=> false
+"".nil? #=> false (This one is tricky and shoule be paid special attention to)
+"".nil?() #=> false
+nil.nil? #=> true
+nil.nil?() #=> true
+
+#####################################################################
+
+puts "Done!"
